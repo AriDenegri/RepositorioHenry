@@ -26,6 +26,9 @@ h2 {
     font-size: 45px;
 }
 
+.text-padding {
+    padding-left: 0.5em;
+}
 
 .header {
     margin: auto;
@@ -35,6 +38,10 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 1em;
+}
+
+#title-form {
+    text-decoration: underline;
 }
 
 .cards {
@@ -68,7 +75,6 @@ h2 {
     /* Row es Fila */
     flex-direction: row;
     justify-content: space-around;
-
 }
 
 /* Utilizamos los dos puntos":" para decir cuando pase esto aplicar esta clase.En este caso cuando
@@ -81,4 +87,19 @@ pase el mouse por arriba se vuelve mas oscura. */
     width: 300px;
     height: 180px;
     border-radius: 20%;
+}
+
+.form {
+    background-color: rgba(228, 228, 228, 0.904);
+    width: 80%;
+    margin: auto;
+    margin-top: 2.5em;
+    border-radius: 50px;
+    padding: 1.5em;
+    /* Utilizando Display Flex para mover los objetos dentro del div
+    y apartir de ahora la clase se va a regir por el tipo flex (tiene sus propiedades) */
+    display: flex;
+    /* Row es Fila */
+    flex-direction: row;
+    justify-content: space-around; 
 }
