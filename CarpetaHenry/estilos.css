@@ -1,0 +1,84 @@
+
+/* Puedo llamar a una etiqueta si solo, como nombre de estilo, la nombro.  */
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Por el contrario, si pongo un punto(.) estare creando un estilo perzonalizado
+al cual le pondre un nombre y la tendre que asignar por medio de un class a una etiqueta. */
+
+.miTexto {
+    font-size: 25px;
+    color: rgb(44, 114, 219);
+    font-family: Arial;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: unset;
+    text-decoration: underline;
+}
+
+/* Utilizacion de Id como discriminador de clase. */
+#title {
+    font-size: 45px;
+}
+
+
+.header {
+    margin: auto;
+    width: 50vw;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.cards {
+    border: 2px solid black;
+    width: 20em;
+    border-radius: 10%;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    size-adjust: auto;
+    /* con tranccion lo que hacemos es que no sea tan brusco el paso de la clase normal a la
+    espesifica (:) */
+    transition: 1s;
+    /* Establecemos flex aca tambien para centrar el texto. */
+    display: flex;
+    flex-direction: column;
+    /* pequeño espacio entre items */
+    gap: 1em;
+    align-items: center;
+}
+
+#cards-container {
+    background-color: rgba(228, 228, 228, 0.904);
+    width: 80%;
+    margin: auto;
+    margin-top: 2.5em;
+    border-radius: 50px;
+    padding: 1.5em;
+    /* Utilizando Display Flex para mover los objetos dentro del div
+    y apartir de ahora la clase se va a regir por el tipo flex (tiene sus propiedades) */
+    display: flex;
+    /* Row es Fila */
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+/* Utilizamos los dos puntos":" para decir cuando pase esto aplicar esta clase.En este caso cuando
+pase el mouse por arriba se vuelve mas oscura. */
+.cards:hover {
+    background-color: rgba(131, 131, 131, 0.507);
+}
+
+.vehicles {
+    width: 300px;
+    height: 180px;
+    border-radius: 20%;
+}

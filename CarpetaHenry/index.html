@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Mi página web</title>
+    <link rel="stylesheet"  href="./estilos.css" />
+    <link rel="stylesheet"  href="./reset.css" />
 </head>
+
 <body>
     <!-- Utilizamos la etiqueta Header para poner todo lo
      que esta en la parte superior de la web (para mantener una
      estructura en el codigo) -->
     <header>
-        <h1>Mi pagina web</h1>
-        <p>Mi nombre es Ari.</p>
-        <!--Hr nos permite hacer una linea divisoria  -->
-        <hr />
-        <img src="imagen1.png"/>
-        <!-- Span permite que no se ocupe el 100% de la
-        pantalla o "renglon" en la pagina, colocando los elementos
-        uno al lado del otro -->
-        <span>HOME</span>
-        <span>CONTACTO</span>
-        <span>TRABAJOS</span>
-        <hr /> 
+        <div class="header">
+            <!-- Utilizando Id como discriminador de clase. -->
+            <h1 id="title">Mi pagina web</h1>
+            <p class="miTexto">Mi nombre es Ari.</p>
+            
+        </div>    
     </header>
-    
+
     <!-- Utilizamos la etiqueta Main (contenido principal) para poner todo lo
      que esta en la parte debajo del header de la web (para mantener una
      estructura en el codigo) -->
@@ -33,38 +31,58 @@
              (CLARIDAD DE CODIGO) -->
             <article>
                 <h2>Este es un titulo secundario</h2>
-                    <div>               
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vitae voluptatem pariatur 
-                            laudantium deserunt blanditiis et voluptate aperiam corrupti 
-                            dolores ipsam eligendi iure, assumenda placeat tempora temporibus aut. Omnis, nihil.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vitae voluptatem pariatur 
-                            laudantium deserunt blanditiis et voluptate aperiam corrupti 
-                            dolores ipsam eligendi iure, assumenda placeat tempora temporibus aut. Omnis, nihil.
-                        </p>       
-                    </div>     
-                        <!--Ordened List  -->
-                        <ol>
-                        <!-- List Item -->
-                            <li>Este es el item 1</li>
-                            <li>Este es el item 2</li>
-                            <li>Este es el item 3</li>
-                        </ol>
-                    
-            </article> 
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vitae voluptatem pariatur
+                        laudantium deserunt blanditiis et voluptate aperiam corrupti
+                        dolores ipsam eligendi iure, assumenda placeat tempora temporibus aut. Omnis, nihil.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vitae voluptatem pariatur
+                        laudantium deserunt blanditiis et voluptate aperiam corrupti
+                        dolores ipsam eligendi iure, assumenda placeat tempora temporibus aut. Omnis, nihil.
+                    </p>
+                </div>
+                <!--Ordened List  -->
+                <ol>
+                    <!-- List Item -->
+                    <li>Este es el item 1</li>
+                    <li>Este es el item 2</li>
+                    <li>Este es el item 3</li>
+                </ol>
 
+            </article>
+            <!--Hr nos permite hacer una linea divisoria  -->
             <hr />
 
             <article>
                 <h2>Este es otro titulo secundario</h2>
-                    <!-- Unordered List -->
-                    <ul>
-                        <li>Este es un elemento adicional</li>
-                        <li>Este es un elemento adicional</li>
-                        <li>Este es un elemento adicional</li>
-                    </ul>
-            </article>        
-        </section>        
+                <!-- Unordered List -->
+                <ul>
+                    <li>Este es un elemento adicional</li>
+                    <li>Este es un elemento adicional</li>
+                    <li>Este es un elemento adicional</li>
+                </ul>
+            </article>
+            <hr/>
+            <article>
+                <h2>Este es un titulo para una seccion de imagenes</h2>
+                    <!-- Utilizando FlexBox -->
+                    <div id="cards-container">
+                        <div class="cards">
+                            <h3>Mclaren720s</h3>
+                            <img class="vehicles" src="./mclaren720s.png"/>
+                        </div>
+                        <div class="cards">    
+                            <h3>Fiat Cronos</h3>
+                            <img class="vehicles" src="./cronos.png"/>
+                        </div>
+                        <div class="cards">
+                            <h3>Ford Shelby500</h3>
+                            <img class="vehicles" src="./shelby500.png"/>
+                        </div>
+                    </div>
+                        <!--Fin de FlexBox  -->
+            </article>
+        </section>
     </main>
 
     <hr />
@@ -78,7 +96,8 @@
         <a href="Contacto.html">Este es un Link</a>
     </footer>
 
-    
-        
+
+
 </body>
+
 </html>
