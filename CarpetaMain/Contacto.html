@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Contacto</title>
+    <link href="estilos.css" rel="stylesheet" 
+</head>
+<body>
+    <header>
+        <h1 class="header" id="title-form">Formulario de Contacto </h1>
+    </header>
+    <main>
+        <div>
+            <h2>Este es un documento para que puedas contactarme.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nemo enim iste maxime quidem! Sed vitae, pariatur et 
+                quae suscipit sunt alias explicabo adipisci rerum aliquam dolore tempora. Praesentium, reiciendis.
+            </p>
+
+        </div>
+
+        <form>
+            <!-- Input le pide datos al usuario y con Type podemos establecer el tipo de dato que 
+             queremos que nos de. Y Label es el pequeño texto que le indica al usuario lo que debe
+             realizar. --> 
+            <!-- Con name damos un nombre en el codigo sobre el input de lo que se esta pidiendo.
+             Luego el for del Label se "vincula", otra vez solo para que el codigo quede entendible, con el input. -->
+            <div class="form">
+                <div>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" placeholder="Ingrese un dato"/> 
+                </div>
+                
+                <div>
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" name="apellido" placeholder="Ingrese un dato" /> 
+                </div>
+
+                <div>
+                    <label for="edad">Edad: </label>
+                    <input type="number" name="edad" placeholder="Ingrese un dato"/>
+                </div>
+   
+                    <button id="button-send">ENVIAR</button>
+            </div>    
+            
+
+
+
+        </form>
+    <footer>
+        <a href="index.html">Volver al inicio</a>
+    </footer>    
+    </main>
+</body>
+</html>
