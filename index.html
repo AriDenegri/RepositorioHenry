@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Mi página web</title>
+    <link rel="stylesheet"  href="./estilos.css" />
+    <link rel="stylesheet"  href="./reset.css" />
+</head>
+
+<body>
+    <!-- Utilizamos la etiqueta Header para poner todo lo
+     que esta en la parte superior de la web (para mantener una
+     estructura en el codigo) -->
+    <header>
+        <div class="header">
+            <!-- Utilizando Id como discriminador de clase. -->
+            <h1 id="title">Mi pagina web</h1>
+            <p class="miTexto">Mi nombre es Ari.</p>
+        </div>    
+    </header>
+    <!-- Utilizamos la etiqueta Main (contenido principal) para poner todo lo
+     que esta en la parte debajo del header de la web (para mantener una
+     estructura en el codigo) -->
+    <main>
+        <!-- Agregamos la etiqueta Section para "abrazar" las diversas secciones del 
+         contenido principal(CLARIDAD DE CODIGO) -->
+        <section>
+            <!-- La etiqueta Article nos separa o divide una seccion a una unidad mas pequeña
+             (CLARIDAD DE CODIGO) -->
+            <article>
+                <div class="text-padding">
+                    <h2>Este es un titulo secundario</h2>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vitae voluptatem pariatur
+                                laudantium deserunt blanditiis et voluptate aperiam corrupti
+                                dolores ipsam eligendi iure, assumenda placeat tempora temporibus aut. Omnis, nihil.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vitae voluptatem pariatur
+                                laudantium deserunt blanditiis et voluptate aperiam corrupti
+                                dolores ipsam eligendi iure, assumenda placeat tempora temporibus aut. Omnis, nihil.
+                            </p>
+                        </div>
+                        <!--Ordened List  -->
+                        <ol>
+                            <!-- List Item -->
+                            <li>Este es el item 1</li>
+                            <li>Este es el item 2</li>
+                            <li>Este es el item 3</li>
+                        </ol>
+                    </div>        
+                </article>
+            <!--Hr nos permite hacer una linea divisoria  -->
+            
+            <hr />
+
+            <article>
+                <div class="text-padding">
+                    <h2>Este es otro titulo secundario</h2>
+                        <!-- Unordered List -->
+                        <ul>
+                            <li>Este es un elemento adicional</li>
+                            <li>Este es un elemento adicional</li>
+                            <li>Este es un elemento adicional</li>
+                        </ul>
+                </div>    
+            </article>
+            
+            <hr/>
+            
+            <article>
+                <div class="text-padding">  
+                    <h2>Este es un titulo para una seccion de imagenes</h2>
+                        <!-- Utilizando FlexBox -->
+                        <div id="cards-container">
+                            <div class="cards">
+                                <h3>Mclaren720s</h3>
+                                <img class="vehicles" src="./mclaren720s.png"/>
+                            </div>
+                            <div class="cards">    
+                                <h3>Fiat Cronos</h3>
+                                <img class="vehicles" src="./cronos.png"/>
+                            </div>
+                            <div class="cards">
+                                <h3>Ford Shelby500</h3>
+                                <img class="vehicles" src="./shelby500.png"/>
+                            </div>
+                        </div>
+                </div>        
+            </article>
+        </section>
+    </main>
+
+    <hr />
+
+    <!-- Utilizamos la etiqueta Footer para poner todo lo
+     que esta en la parte inferior del contenido principal (para mantener una
+     estructura en el codigo) -->
+    <footer>
+        <div class="text-padding">
+            <p>Este el el Footer de la pagina, dejo unos enlaces</p>
+            <a href="Contacto.html">Este es un Link</a>
+        </div>    
+    </footer>
+
+</body>
+
+</html>
